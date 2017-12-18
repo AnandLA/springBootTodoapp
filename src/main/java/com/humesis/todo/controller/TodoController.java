@@ -42,13 +42,13 @@ public class TodoController {
 	}
   
 
-	
+	/*
 	@RequestMapping(value = "/todo/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> deleteTodo(@PathVariable int id){
 		todoService.deleteTodo(id);
 		return new ResponseEntity<>(HttpStatus.OK) ;
 	}
-	
+	*/
 
 	@RequestMapping(value = "/todo/{id}/status", method = RequestMethod.PUT)
 	public ResponseEntity<?> changeTodoStatus(@PathVariable int id, 
