@@ -42,7 +42,7 @@ public class TodoController {
 	}
   
 
-	/*
+	/* remove comment to enable DELETE API 
 	@RequestMapping(value = "/todo/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> deleteTodo(@PathVariable int id){
 		todoService.deleteTodo(id);
