@@ -40,14 +40,15 @@ public class TodoController {
 	public ResponseEntity<?> updateTodo(@RequestBody TodoRequest todoRequest,@PathVariable int id){
 		return new ResponseEntity<>(todoService.updateTodo(id, todoRequest),HttpStatus.OK) ;
 	}
-
+  
+	/*
 	
 	@RequestMapping(value = "/todo/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> deleteTodo(@PathVariable int id){
 		todoService.deleteTodo(id);
 		return new ResponseEntity<>(HttpStatus.OK) ;
 	}
-	
+	*/
 
 	@RequestMapping(value = "/todo/{id}/status", method = RequestMethod.PUT)
 	public ResponseEntity<?> changeTodoStatus(@PathVariable int id, 
